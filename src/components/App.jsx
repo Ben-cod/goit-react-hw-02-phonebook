@@ -36,6 +36,9 @@ export class App extends Component {
       contacts: prevState.contacts.filter((contact) => contact.id !== id)
     }))
   }
+  handleFilterChange = (event) => {
+    this.setState({ filter: event.target.value });
+  }
 
   render(){
     const {contacts, filter} = this.state
