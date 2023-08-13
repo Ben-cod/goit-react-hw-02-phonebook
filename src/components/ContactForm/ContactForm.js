@@ -23,9 +23,10 @@ const validationSchema = Yup.object().shape({
     ),
 });
 
-export const ContactForm = () => {
+export const ContactForm = ({onSubmit}) => {
   const handleSubmit = (values) => {
-    console.log(values);
+    onSubmit(values);
+    // console.log(values);
   };
 
   return (
