@@ -1,0 +1,13 @@
+.form{
+   
+    background-color: bisque;
+    padding: 15px;
+    margin-bottom: 15px;
+   
+}
+.field{
+    margin-bottom: 20px;
+}
+.label{
+    margin-right: 10px;
+}
