@@ -8,21 +8,7 @@ import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
-// const validationSchema = Yup.object().shape({
-//   name: Yup.string()
-//     .required('Name is required')
-    
-//     .matches(
-//       /^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$/,
-//       'Invalid name format'
-//     ),
-//   phone: Yup.string()
-//     .required('Phone is required')
-//     .matches(
-//       /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/,
-//       'Invalid phone number'
-//     ),
-// });
+
 const validationSchema = Yup.object().shape({
     name: Yup.string()
       .required('Обов\'язкове поле')
